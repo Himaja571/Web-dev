@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>the this js keyword</title>
+</head>
+<body>
+<h1>The javascript object using this keyword</h1>
+<h2>This refers to the object</h2>
+<p id ='demo'></p>
+<script>
+const person1={
+    name:"Ramu",
+    my:function() {
+        return "hello "+this.name;
+    }
+};
+const person2={
+    name:"Somu",
+    my:function() {
+        return "hello  "+this.name;
+    }
+};
+document.getElementById('demo').innerHTML=person2.my();
+
+
+</script>
+</body>
