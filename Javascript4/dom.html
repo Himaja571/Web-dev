@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> The  JAVASCRIPT  DOM </title>
+<body>
+<h1>The DOM stands for Document Object Model</h1>
+<p>Accessing elements through <b>getElementById</b></p>
+<p id="intro"> Finding HTML Elements by Id</p>
+<p id ='demo'></p>
+<script>
+  const element=document.getElementById('intro')
+  document.getElementById('demo').innerHTML="the above paragraph is about"+  element.innerHTML;
+</script>
+</body>
+</html>
