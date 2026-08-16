@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Events</h1>
+<h2>The mousemove Event</h2>
+
+<div id="box"
+style="width:300px;height:150px;padding:16px;border:1px solid #000;">
+Move your mouse inside this box!
+</div>
+
+<script>
+const box = document.getElementById("box");
+
+box.addEventListener("mousemove", function () {
+  box.innerHTML = "Mouse is moving!";
+});
+</script>
+
+</body>
+</html>
