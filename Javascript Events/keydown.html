@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Events</h1>
+<h2>The keydown Event</h2>
+
+<input id="input" placeholder="Press any key">
+
+<script>
+const input = document.getElementById("input");
+
+input.addEventListener("keydown", function () {
+  input.style.backgroundColor = "lightgreen";
+});
+</script>
+
+</body>
+</html>
