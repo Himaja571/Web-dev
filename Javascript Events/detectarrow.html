@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Events</h1>
+<h2>Arrow Keys</h2>
+
+<input id="input" placeholder="Press an arrow key">
+
+<p id="result"></p>
+
+<script>
+const input = document.getElementById("input");
+const result = document.getElementById("result");
+
+input.addEventListener("keydown", function (event) {
+
+  if (event.key === "ArrowUp") {
+    result.innerHTML = "⬆️ Up Arrow";
+  }
+
+  if (event.key === "ArrowDown") {
+    result.innerHTML = "⬇️ Down Arrow";
+  }
+
+  if (event.key === "ArrowLeft") {
+    result.innerHTML = "⬅️ Left Arrow";
+  }
+
+  if (event.key === "ArrowRight") {
+    result.innerHTML = "➡️ Right Arrow";
+  }
+
+});
+</script>
+
+</body>
+</html>
