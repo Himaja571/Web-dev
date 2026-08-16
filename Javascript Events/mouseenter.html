@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Events</h1>
+<h2>The mouseenter Event</h2>
+
+<div id="box"
+style="width:200px;height:100px;padding:16px;border:1px solid #000;">
+Enter this box
+</div>
+
+<script>
+const box = document.getElementById("box");
+
+box.addEventListener("mouseenter", function () {
+  box.innerHTML = "Mouse entered!";
+});
+</script>
+
+</body>
+</html>
