@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Events</h1>
+<h2>The dblclick Event</h2>
+
+<div id="box"
+style="width:200px;height:100px;padding:16px;border:1px solid #000;">
+Double click this box!
+</div>
+
+<script>
+const box = document.getElementById("box");
+
+box.addEventListener("dblclick", function () {
+  box.innerHTML = "Double Clicked!";
+});
+</script>
+
+</body>
+</html>
