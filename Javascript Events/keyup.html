@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Events</h1>
+<h2>The keyup Event</h2>
+
+<input id="input" placeholder="Release any key">
+
+<script>
+const input = document.getElementById("input");
+
+input.addEventListener("keyup", function () {
+  input.style.backgroundColor = "lightblue";
+});
+</script>
+
+</body>
+</html>
