@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Sets</h1>
+<h2> the isDisjointFrom() Method</h2>
+
+<p>The isDisjointFrom() method returns true if this set has no elements in common with the argument set:</p>
+
+<p id="demo"></p>
+
+<script>
+const A = new Set(['a','b','c']);
+const B = new Set(['b','c','d']);
+
+answer = A.isDisjointFrom(B);
+
+document.getElementById("demo").innerHTML = answer;
+</script>
+</body>
+</html>
