@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Sets</h1>
+<h2>The isSupersetOf() Method</h2>
+
+<p>The isSupersetOf() method returns true if all elements in the argument set are also in this set:</p>
+<p id="demo"></p>
+
+<script>
+const A = new Set(['a','b','c']);
+const B = new Set(['b','c','d']);
+
+let answer = A.isSupersetOf(B);
+
+document.getElementById("demo").innerHTML = answer;
+</script>
+</body>
+</html>
