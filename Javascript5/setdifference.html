@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Sets</h1>
+<h2>The difference() Method</h2>
+
+<p>The difference() method returns a new set containing elements which are in this set
+but not in the argument set:</p>
+
+<p id="demo"></p>
+
+<script>
+const A = new Set(['a','b','c']);
+const B = new Set(['b','c','d']);
+
+const C = A.difference(B);
+
+let text = "";
+for (const x of C) {
+  text += x;
+}
+document.getElementById("demo").innerHTML = "The difference is: " + text;
+</script>
+</body>
+</html>
